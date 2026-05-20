@@ -1,0 +1,10 @@
+# Ignore generated MATLAB output files
+/NASA/NASA_TLX_weighted_scores.csv
+/NASA/NASA_TLX_weighted_scores.mat
+
+# macOS thumbnail/db files (optional)
+.DS_Store
+
+# Python virtualenvs and caches (optional)
+__pycache__/
+.vscode/
