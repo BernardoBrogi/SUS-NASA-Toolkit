@@ -27,11 +27,22 @@ An example is shown here with the SUS executable:
 
 ## MATLAB analysis scripts
 
-- **[NASA/nasa_analysis.m](NASA/nasa_analysis.m)**: parses CSV files in `NASA/data_csv` to detect users, test types and trial conditions; computes NASA-TLX weights and weighted ratings per axis by combining pairwise (PW) counts (from `importfilePW`) and rating scales (from `importfileRS`); builds per-subject and per-condition tables, saves results to `NASA_TLX_weighted_scores.mat` and `NASA_TLX_weighted_scores.csv`; produces plots including per-user overall workload (bar of weighted ratings), category-wise ratings per axis, and pairwise comparison bar plots.
+- **[NASA/nasa_analysis.m](NASA/nasa_analysis.m)**:
+  - Parses CSV files in `NASA/data_csv` to detect users, test types and trial conditions
+  - Computes NASA-TLX weights and weighted ratings per axis by combining pairwise (PW) counts (from `importfilePW`) and rating scales (from `importfileRS`)
+  - Builds per-subject and per-condition tables
+  - Saves results to `NASA_TLX_weighted_scores.mat` and `NASA_TLX_weighted_scores.csv`
+  - Produces plots including per-user overall workload (bar of weighted ratings), category-wise ratings per axis, and pairwise comparison bar plots
 
 <p align="center"><img src="Images/nasa.png" alt="nasa plots" width="600" /></p>
 
-- **[SUS/sus_analysis.m](SUS/sus_analysis.m)**: reads SUS CSV responses in `SUS/data_csv`, extracts user and condition from filenames, computes each subject's SUS score using the standard formula (odd items: score-1; even items: 5-score; total * 2.5); assembles long and wide tables (filters users with all conditions), creates boxplots (or bar plots for single-subject) of SUS scores by condition, and computes descriptive statistics (quartiles and whiskers) for each condition.
+- **[SUS/sus_analysis.m](SUS/sus_analysis.m)**:
+  - Reads SUS CSV responses in `SUS/data_csv`
+  - Extracts user and condition from filenames
+  - Computes each subject's SUS score using the standard formula (odd items: score-1; even items: 5-score; total * 2.5)
+  - Assembles long and wide tables (filters users with all conditions)
+  - Creates boxplots (or bar plots for single-subject) of SUS scores by condition
+  - Computes descriptive statistics (quartiles and whiskers) for each condition
 
 <p align="center"><img src="Images/sus.jpg" alt="sus plots" width="300" /></p>
 
